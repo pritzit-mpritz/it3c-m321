@@ -65,7 +65,7 @@ git log --oneline -15
   (`git show bewertung-2:<pfad>`), denn das ist, was bewertet wird.
 - Kein Tag: aktueller Stand, und sag der Person, dass der Tag fehlt.
 
-Dann die Sitzung anlegen. `--tool` ist dein Werkzeug: `claude-code`, `antigravity` oder `opencode`.
+Dann die Sitzung anlegen. `--tool` ist dein Werkzeug: `claude-code`, `codex`, `antigravity` oder `opencode`.
 `--probe` nur beim Probelauf.
 
 ```

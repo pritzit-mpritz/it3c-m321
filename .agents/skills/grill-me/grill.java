@@ -32,7 +32,7 @@ public class grill {
         "AGENTS.md",
     };
     static final String STANDARD_URL = "https://grill-me.pritz-it.com";
-    static final List<String> WERKZEUGE = List.of("claude-code", "antigravity", "opencode");
+    static final List<String> WERKZEUGE = List.of("claude-code", "codex", "antigravity", "opencode");
     static final int POLL_SEKUNDEN = 5;
     static final int POLL_MAXIMAL_SEKUNDEN = 600;
     // Ab dieser Ueberschrift gehoert der Text nur in die lokale Datei, nicht in /api/protocols.
@@ -97,7 +97,7 @@ public class grill {
             }
         }
         if (!WERKZEUGE.contains(werkzeug)) {
-            throw new GrillFehler("BEFEHL", "--tool muss claude-code, antigravity oder opencode sein");
+            throw new GrillFehler("BEFEHL", "--tool muss claude-code, codex, antigravity oder opencode sein");
         }
 
         Path wurzel = repoWurzel();
