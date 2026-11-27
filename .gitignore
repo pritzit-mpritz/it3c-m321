@@ -18,3 +18,7 @@ dist/
 
 # Playwright-Prüfartefakte
 .playwright-mcp/
+
+# grill-me
+.grill/
+docs/grill-protokoll-*.md
